@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
 .main{
     background-color: #002347;
 }
@@ -15,5 +17,7 @@ h1, h2, h3, h4, h5, p{
 .header{
     text-align: center;
 }
+
+
       
 
