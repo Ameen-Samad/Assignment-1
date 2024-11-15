@@ -1,0 +1,19 @@
+.main{
+    background-color: #002347;
+}
+.navbar{
+    height: 75px;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+h1, h2, h3, h4, h5, p{
+    font-family: inknut-antiqua;
+    color: blue
+    
+}
+.header{
+    text-align: center;
+}
+      
+
