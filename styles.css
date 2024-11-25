@@ -1,43 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
-@media (max-width: 425) {
-    ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
-ul li{
-    list-style: none;
-    margin-left: 50px;
-    margin-top: 8px;
-    display: inline-block;
-    font-size: 2vw;
-    text-align: center;
-}
-ul li a{
-    font-family: inknut antiqua;
-    font-weight: bold;
-    text-align: center;
-    display: block;
-    position:relative;
-    text-decoration: none;
-    color: black;
-}
-ul li a::before{
-    content: '';
-    position: auto;
-    top: 75%;
-    left: 0%;
-    width: 0;
-    height: 2px;
-    background: #eee1c6;
-    transition: .3s;
-}
-ul li a:hover::before{
-    width: 100%;
-}
-}
-    
+
 *{
     margin: 0;
     padding: 0;
@@ -46,18 +8,21 @@ ul li a:hover::before{
     background-color: #002437;
 }
 .navbar{
-    height: 50px;
-    margin: auto;
-    text-align: center;
-    overflow: hidden;
     background-color: grey;
-}
-
-ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
+    padding: 10px 0;
+}
+
+.nav ul{
+    list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+}
+.nav li {
+    margin: 0 10px;
 }
 ul li{
     list-style: none;
@@ -68,6 +33,16 @@ ul li{
     text-align: center;
     
 }
+.nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.nav a:hover {
+    background-color: #ff6600;
+}
 ul li a{
     font-family: inknut antiqua;
     font-weight: bold;
@@ -77,21 +52,21 @@ ul li a{
     text-decoration: none;
     color: black;
 }
-ul li a::before{
-    content: '';
-    position: absolute;
-    top: 75%;
-    left: 0%;
-    width: 0;
-    height: 2px;
-    background: #eee1c6;
-    transition: .3s;
+.menu-toggle {
+    display: none;
+    /* background-color: #ff6600;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 10px auto; */
 }
-ul li a:hover::before{
-    width: 100%;
-}
-.header{
-    background-color: white
+.menu-toggle:focus {
+    outline: none;
 }
 .body{
     font-family: inknut antiqua;
@@ -109,20 +84,78 @@ h1{
     text-align: center;
     padding: 20px;
     background-color: #FD7002;
+    color: black;
+
 }
 h2{
     font-family: inknut antiqua;
+    font-size: 3vmax;
+    top: auto;
 }
-.footer{
-    background-color: #b59b7c;
-    padding: 10px;
+.menutoggle:focus{
+    outline: none;
 }
-.contact{
-    background: color #806c61;
-    font-family: sans-serif;
-    font-weight: bold;
+.container{
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    
+}
+.box{
+    border-radius: 20px;
+    background-color: rgb(255, 119, 0);
+    width: auto;
+    height: 200px;
+    padding: 20px;
+    border-style: solid;
+    width: 50%;
+    margin: 20px;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+.img{
+    display: block;
+    margin-left: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: inknut antiqua;
+    background-color: #002437;
+
 }
 
 
       
 
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #707070;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav li {
+        width: 100%;
+    }
+    .nav a {
+        text-align: left;
+        padding-left: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .nav {
+        display: none;
+    }
+    }
+    
