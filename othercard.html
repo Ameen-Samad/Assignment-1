@@ -24,19 +24,36 @@
         </div>
     <hr color="_blank">
     <div class="body">
-    <div class="container">
-        <div class="box">
-            <h2 style="text-decoration: underline;">Other Cards</h2>
-            <div class="p">
-            <p></p>
+        <div class="container">
+            <div class="product-section">
+                <h2>Sleeves</h2>
+                <div class="product-grid">
+                    <div class="box">
+                        <img src="sleeve1.png" alt="Sleeves">
+                        <button class="add-to-cart" data-name="Sleeve 1" data-price="4.99">Add to Cart</button>
+                    </div>
+                    <div class="box">
+                        <img src="sleeve2.png" alt="Sleeves">
+                        <button class="add-to-cart" data-name="Sleeve 2" data-price="6.99">Add to Cart</button>
+                    </div>
+                    <div class="box">
+                        <img src="sleeve3.png" alt="Sleeves">
+                        <button class="add-to-cart" data-name="Sleeve 3" data-price="5.99">Add to Cart</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="box">
-            <h2 style="text-decoration: underline;">Best Prices</h2>
+
+        <button id="cart-button" class="cart-button">View Cart</button>
+
+        <div id="cart-popup" class="cart-popup hidden">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="remove-all" class="remove-all-button">Remove All</button>
+            <button id="checkout-button">Checkout</button>
+            <button id="close-cart-button" class="close-cart-button">Close</button>
         </div>
-    </div>
     </div>
     <script type="module" src="script.js"></script>
 </body>

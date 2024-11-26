@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
+    <title>Home</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
@@ -28,6 +28,7 @@
         <div class="box">
             <h2 style="text-decoration: underline;">Popular Cards</h2>
             <div class="p">
+                <button class="add-to-cart" data-name="Card 1" data-price="7.99">Add to Cart</button>
             <p></p>
             </div>
         </div>
@@ -37,6 +38,15 @@
             <h2 style="text-decoration: underline;">Best Prices</h2>
         </div>
     </div>
+    </div>
+    <button id="cart-button" class="cart-button">View Cart</button>
+    <div id="cart-popup" class="cart-popup hidden">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p><span id="cart-total">$0.00</span></p>
+        <button id="remove-all" class="remove-all-button">Remove All</button>
+        <button id="checkout-button">Checkout</button>
+        <button id="close-cart-button" class="close-cart-button">Close</button>
     </div>
     <script type="module" src="script.js"></script>
 </body>
