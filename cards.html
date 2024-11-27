@@ -38,6 +38,15 @@
                 <h2>Sellers</h2>
             </div>
         </div>
-    <script type="module" src="script.js"></script>
+        <button id="cart-button" class="cart-button">View Cart</button>
+        <div id="cart-popup" class="cart-popup hidden">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p><span id="cart-total">$0.00</span></p>
+            <button id="remove-all" class="remove-all-button">Remove All</button>
+            <button id="checkout-button">Checkout</button>
+            <button id="close-cart-button" class="close-cart-button">Close</button>
+        </div>
+        <script type="module" src="script.js"></script>
 </body>
 </html>

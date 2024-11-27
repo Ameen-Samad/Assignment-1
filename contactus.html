@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="contact.css" type="text/css">
 </head>
 <body>
     <div class="main">
@@ -24,20 +24,25 @@
         </div>
     <hr color="_blank">
     <div class="body">
-    <div class="container">
-        <div class="box">
-            <h2 style="text-decoration: underline;">Contact Us</h2>
-            <div class="p">
-            <p></p>
+        <div class="container">
+            <div class="box">
+                <h2 style="text-decoration: underline;">Contact Us</h2>
+                <form id="contact-form" class="contact-form">
+                    <br>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+                <p id="form-message" class="form-message"></p>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="box">
-            <h2 style="text-decoration: underline;">Best Prices</h2>
-        </div>
-    </div>
-    </div>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="contact.js"></script>
 </body>
 </html>
