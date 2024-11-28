@@ -86,3 +86,61 @@ removeAllButton.addEventListener("click", () => {
     updateCart(); 
 });
 updateCart();
+
+const boxes = document.querySelectorAll('.box');
+
+boxes.forEach((box) => {
+    box.addEventListener('mouseover', () => {
+        box.style.transform = 'scale(1.05)';
+        box.style.boxShadow = '0 8px 15px rgba(0, 0, 0, 0.2)';
+        box.style.borderColor = '#ff6600';
+    });
+
+    box.addEventListener('mouseout', () => {
+        box.style.transform = 'scale(1)';
+        box.style.boxShadow = 'none';
+        box.style.borderColor = 'transparent';
+    });
+});
+function setupCarousel(containerSelector, addToCartButtonId) {
+    const container = document.querySelector(containerSelector);
+    const leftArrow = container.querySelector(".left-arrow");
+    const rightArrow = container.querySelector(".right-arrow");
+    const cardWrapper = container.querySelector(".card-wrapper");
+    const addToCartBtn = document.getElementById(addToCartButtonId);
+
+    let currentIndex = 0;
+    const cards = container.querySelectorAll(".card");
+
+    function updateCarousel() {
+        cardWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        const activeCard = cards[currentIndex];
+        const cardName = activeCard.getAttribute("data-name");
+        const cardPrice = activeCard.getAttribute("data-price");
+
+        addToCartBtn.textContent = `Add ${cardName} to Cart - $${cardPrice}`;
+        addToCartBtn.setAttribute("data-name", cardName);
+        addToCartBtn.setAttribute("data-price", cardPrice);
+    }
+
+    leftArrow.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+        updateCarousel();
+    });
+
+    rightArrow.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % cards.length;
+        updateCarousel();
+    });
+
+    addToCartBtn.addEventListener("click", () => {
+        const cardName = addToCartBtn.getAttribute("data-name");
+        const cardPrice = parseFloat(addToCartBtn.getAttribute("data-price"));
+    });
+
+    updateCarousel();
+}
+
+setupCarousel(".container:first-child", "add-to-cart-btn"); 
+setupCarousel(".container:nth-child(2)", "best-prices-add-to-cart"); 

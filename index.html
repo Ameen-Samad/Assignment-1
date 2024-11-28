@@ -24,20 +24,50 @@
         </div>
     <hr color="_blank">
     <div class="body">
-    <div class="container">
-        <div class="box">
-            <h2 style="text-decoration: underline;">Popular Cards</h2>
-            <div class="p">
-                <button class="add-to-cart" data-name="Card 1" data-price="7.99">Add to Cart</button>
-            <p></p>
+        <div class="container">
+            <div class="box">
+                <h2 style="text-decoration: underline;">Popular Cards</h2>
+                <div class="card-carousel">
+                    <button class="arrow left-arrow">&lt;</button>
+                    <div class="card-wrapper">
+                        <div class="card" data-name="Card 1" data-price="10.40">
+                            <img src="Picture/card1.png" alt="Card 1">
+                        </div>
+                        <div class="card" data-name="Card 2" data-price="19.30">
+                            <img src="Picture/card2.png" alt="Card 2">
+                        </div>
+                        <div class="card" data-name="Card 3" data-price="14.55">
+                            <img src="Picture/card3.png" alt="Card 3">
+                        </div>
+                    </div>
+                    <button class="arrow right-arrow">&gt;</button>
+                </div>
+                <button id="add-to-cart-btn" class="add-to-cart" style="font-family: inknut antiqua;">Add Card 1 to Cart - $7.99</button>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="box">
-            <h2 style="text-decoration: underline;">Best Prices</h2>
+        <div class="container">
+            <div class="box">
+                <h2 style="text-decoration: underline;">Best Prices</h2>
+                <div class="card-carousel">
+                    <button class="arrow left-arrow best-prices-left">&lt;</button>
+                    <div class="card-wrapper best-prices-wrapper">
+                        <div class="card" data-name="Card 1" data-price="8.40">
+                            <img src="Picture/card4.png" alt="Card 4">
+                        </div>
+                        <div class="card" data-name="Card 2" data-price="6.80">
+                            <img src="Picture/card5.png" alt="Card 5">
+                        </div>
+                        <div class="card" data-name="Card 3" data-price="5.90">
+                            <img src="Picture/card6.png" alt="Card 6">
+                        </div>
+                    </div>
+                    <button class="arrow right-arrow best-prices-right">&gt;</button>
+                </div>
+                <button id="best-prices-add-to-cart" class="add-to-cart" style="font-family: inknut antiqua;">
+                    Add Card 1 to Cart - $8.40
+                </button>
+            </div>
         </div>
-    </div>
     </div>
     <button id="cart-button" class="cart-button">View Cart</button>
     <div id="cart-popup" class="cart-popup hidden">
