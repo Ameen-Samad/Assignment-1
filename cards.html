@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
+    <title>card</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
@@ -15,7 +15,7 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="cards.html">Cards</a></li> 
-                        <li><a href="othercard.html">Other Cards</a></li>
+                        <li><a href="othercard.html">Other Products</a></li>
                         <li><a href="aboutus.html">About Us</a></li>
                         <li><a href="contactus.html">Contact Us</a></li>
                     </ul>
@@ -25,28 +25,59 @@
     <hr color="_blank">
     <div class="body">
         <div class="container">
-            <div class="box card-title">
-                <h2>Card Title</h2>
-                <img src="mewtwo-card.png" alt="Mewtwo Card">
-            </div>
-            <div class="box card-description">
-                <h2>Card Description</h2>
+            <div class="box">
+                <h2 style="text-decoration: underline;">Exclusive Cards</h2>
+                <div class="card-carousel">
+                    <button class="arrow left-arrow">&lt;</button>
+                    <div class="card-wrapper">
+                        <div class="card" data-name="Nanomite" data-price="100">
+                            <img src="Picture/card10.png" alt="Nanomite">
+                        </div>
+                        <div class="card" data-name="Clawop" data-price="19.30">
+                            <img src="Picture/card2.png" alt="Clawop">
+                        </div>
+                        <div class="card" data-name="Flamchik" data-price="14.55">
+                            <img src="Picture/card3.png" alt="Flamchik">
+                        </div>
+                    </div>
+                    <button class="arrow right-arrow">&gt;</button>
+                </div>
+                <button id="add-to-cart-btn" class="add-to-cart" style="font-family: inknut antiqua;">Add Card 1 to Cart - $7.99</button>
             </div>
         </div>
         <div class="container">
-            <div class="box sellers">
-                <h2>Sellers</h2>
+            <div class="box">
+                <h2 style="text-decoration: underline;">Best Prices</h2>
+                <div class="card-carousel">
+                    <button class="arrow left-arrow best-prices-left">&lt;</button>
+                    <div class="card-wrapper best-prices-wrapper">
+                        <div class="card" data-name="Tetron" data-price="8.40">
+                            <img src="Picture/card4.png" alt="Tetron">
+                        </div>
+                        <div class="card" data-name="Kyrone" data-price="6.80">
+                            <img src="Picture/card5.png" alt="Kyrone">
+                        </div>
+                        <div class="card" data-name="Helio" data-price="5.90">
+                            <img src="Picture/card6.png" alt="Helio">
+                        </div>
+                    </div>
+                    <button class="arrow right-arrow best-prices-right">&gt;</button>
+                </div>
+                <button id="best-prices-add-to-cart" class="add-to-cart" style="font-family: inknut antiqua;">
+                    Add Card 1 to Cart - $8.40
+                </button>
             </div>
         </div>
-        <button id="cart-button" class="cart-button">View Cart</button>
-        <div id="cart-popup" class="cart-popup hidden">
-            <h2>Your Cart</h2>
-            <div id="cart-items"></div>
-            <p><span id="cart-total">$0.00</span></p>
-            <button id="remove-all" class="remove-all-button">Remove All</button>
-            <button id="checkout-button">Checkout</button>
-            <button id="close-cart-button" class="close-cart-button">Close</button>
-        </div>
-        <script type="module" src="script.js"></script>
+    </div>
+    <button id="cart-button" class="cart-button">View Cart</button>
+    <div id="cart-popup" class="cart-popup hidden">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p><span id="cart-total">$0.00</span></p>
+        <button id="remove-all" class="remove-all-button">Remove All</button>
+        <button id="checkout-button">Checkout</button>
+        <button id="close-cart-button" class="close-cart-button">Close</button>
+    </div>
+    <script type="module" src="script.js"></script>
 </body>
 </html>

@@ -374,6 +374,28 @@ body{
     font-size: 16px;
     font-weight: bold;
 }
+.read-more-btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #e65500;
+}
+
+.additional-info {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
 
 @media (max-width: 650px) {
     .navbar {
@@ -382,7 +404,9 @@ body{
         width: 100%;
         background-color: grey;
     }
-
+    .box{
+        width: 90%;
+    }
     .menu-toggle {
         display: flex;
     }
@@ -403,4 +427,5 @@ body{
         display: none;
     }
     }
+    
     
