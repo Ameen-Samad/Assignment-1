@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
-
+/* contact */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -48,6 +48,7 @@
     font-weight: bold;
 }
 
+/* main */
 .box {
     border-radius: 20px;
     background-color: rgb(255, 119, 0);

@@ -1,3 +1,4 @@
+/* validation for contact form */
 document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault();
 
@@ -44,7 +45,7 @@ function validateEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
 }
-
+/* menu */
 const menuToggle = document.getElementById("toggleMenu")
 const navbar = document.getElementById("nav");
 
