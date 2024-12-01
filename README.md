@@ -16,4 +16,4 @@ X.com: https://x.com/caseoh__
 
 
 Original idea from:
-Caseoh: twitch.tv/caseoh_ , youtube.com/@caseoh_
+Caseoh: [twitch.tv/caseoh_](https://www.twitch.tv/caseoh_) , [youtube.com/@caseoh_](https://www.youtube.com/@caseoh_)
